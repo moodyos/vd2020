@@ -1,0 +1,432 @@
+<html>
+<head>
+
+<style>
+	    @font-face {
+  font-family:zx;
+  src: url(../ZX_SPECTRUM-7.ttf);
+}
+    body {
+  background-color: #bdbdbd;
+  color: #000;
+}
+
+.background {
+	height: 800px;
+	width: 800px;
+	background-color: #2bb673;
+	position: absolute;
+	z-index: 1;
+}
+
+.tree {
+	width:0;
+	height:0;
+	border-left: 150px solid transparent;
+	border-right: 150px solid transparent;
+	border-bottom: 800px solid #056839;
+	position:absolute;
+	z-index: 2;
+	margin-left: 100px;
+}
+
+.crow {
+	height: 100px;
+	width: 100px;
+	background-color: #000000;
+	border-radius: 50%;
+	position: absolute;
+	z-index: 3;
+	margin-left: 200px;
+	margin-top: 200px;
+	clip-path: polygon(0 0, 100% 0, 100% 87%, 0 87%);
+}
+
+
+.beak1 {
+	width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-left: 50px solid #e2e41c;
+	border-bottom: 25px solid transparent;
+	margin-left: 270px;
+	margin-top: 175px;
+	position: absolute;
+	z-index: 4;
+	clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+	transform: rotate(-50deg);
+
+	animation-name: beak1;
+	animation-duration: 0.5s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes beak1{
+
+	0% {
+		transform: rotate(-50deg);
+		transform-origin: center;
+		margin-top: 175px;
+	}
+    
+    50% {
+    	transform: rotate(-60deg);
+    	transform-origin: center;
+    }
+
+    75% {
+    	transform:rotate(-25deg);
+    	transform-origin: center;
+    	margin-top: 180px;
+    }
+
+    100% {
+    	transform: rotate(-50deg);
+    	transform-origin: center;
+    	margin-top: 175px;
+    }
+}
+
+.beak2 {
+	width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-left: 50px solid #e2e41c;
+	border-bottom: 25px solid transparent;
+	margin-left: 280px;
+	margin-top: 190px;
+	position: absolute;
+	z-index: 4;
+	clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
+	transform: rotate(-30deg);
+
+	animation-name: beak2;
+	animation-duration: 0.7s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes beak2{
+
+	0% {
+		transform: rotate(-30deg);
+		transform-origin: center;
+		margin-top: 190px;
+	}
+    
+    50% {
+    	transform: rotate(-20deg);
+    	transform-origin: center;
+    }
+
+    75% {
+    	transform:rotate(-45deg);
+    	transform-origin: center;
+    	margin-top: 180px;
+    }
+
+    100% {
+    	transform: rotate(-30deg);
+    	transform-origin: center;
+    	margin-top: 190px;
+    }
+}
+
+.note1 {
+	position: absolute;
+	z-index: 5;
+	font-size: 50pt;
+	margin-left: 317px;
+	margin-top: 170px;
+	transform: rotate(-12deg);
+
+	animation-name: note1;
+	animation-duration: 0.001s;
+	animation-iteration-count: infinite;
+    transition-timing-function: linear;
+}
+
+@keyframes note1 {
+	0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.note2 {
+	position: absolute;
+	z-index: 5;
+	font-size: 50pt;
+	margin-left: 378px;
+	margin-top: 87px;
+	transform: rotate(20deg);
+    animation-name: note2;
+	animation-duration: 0.011s;
+	animation-iteration-count: infinite;
+	transition-timing-function: ease;
+}
+
+@keyframes note2 {
+	0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.note3 {
+	position: absolute;
+	z-index: 5;
+	font-size: 50pt;
+	margin-left: 117px;
+	margin-top: 229px;
+	transform: rotate(-21deg);
+animation-name: note3;
+	animation-duration: 0.000001s;
+	animation-iteration-count: infinite;
+	transition-timing-function: ease-out;
+}
+
+@keyframes note3 {
+	0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.note4 {
+	position: absolute;
+	z-index: 5;
+	font-size: 50pt;
+	margin-left: 358px;
+	margin-top: 253px;
+	transform: rotate(-11deg);
+animation-name: note4;
+	animation-duration: 0.1s;
+	animation-iteration-count: infinite;
+	transition-timing-function: ease-in-out;
+	animation-delay: 0.04s;
+}
+
+@keyframes note4 {
+	0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.note5 {
+	position: absolute;
+	z-index: 5;
+	font-size: 50pt;
+	margin-left: 167px;
+	margin-top: 111px;
+	transform: rotate(13deg);
+animation-name: note5;
+	animation-duration: 0.0002s;
+	animation-iteration-count: infinite;
+	transition-timing-function: cubic-bezier(2,1,5,9);
+}
+
+@keyframes note5 {
+	0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.note6 {
+	position: absolute;
+	z-index: 5;
+	font-size: 50pt;
+	margin-left: 307px;
+	margin-top: 112px;
+	transform: rotate(22deg);
+animation-name: note6;
+	animation-duration: 0.01s;
+	animation-iteration-count: infinite;
+	transition-timing-function: cubic-bezier(14,50,11,7);
+}
+
+@keyframes note6 {
+	0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.note7 {
+	position: absolute;
+	z-index: 5;
+	font-size: 50pt;
+	margin-left: 312px;
+	margin-top: 232px;
+	transform: rotate(-30deg);
+animation-name: note7;
+	animation-duration: 0.01s;
+	animation-iteration-count: infinite;
+	transition-timing-function: cubic-bezier(240,11,120,60);
+}
+
+@keyframes note7 {
+	0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.note8 {
+	position: absolute;
+	z-index: 5;
+	font-size: 50pt;
+	margin-left: 245px;
+	margin-top: 43px;
+	transform: rotate(30deg);
+animation-name: note8;
+	animation-duration: 0.001s;
+	animation-iteration-count: infinite;
+	transition-timing-function: cubic-bezier(2,1,5,9);
+}
+
+@keyframes note8 {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.fox1 {
+    height: 200px;
+    width: 200px;
+    background-color: #ee1b24;
+	position: absolute;
+	z-index: 3;
+	transform: rotate(180deg);
+	margin-top: 600px;
+	margin-left: 450px;
+	clip-path: polygon(30% 30%, 70% 30%, 100% 100%, 0% 100%);
+}
+
+.fox2 {
+	height: 200px;
+    width: 200px;
+    background-color: #ffffff;
+	position: absolute;
+	z-index: 3;
+	transform: rotate(180deg);
+	margin-top: 600px;
+	margin-left: 450px;
+	clip-path: polygon(50% 0, 50% 0, 70% 30%, 30% 30%);
+	
+	
+}
+.opis {
+  margin-top: 550px;
+  margin-left: 850px;
+  font-family:zx;
+  font-size: 30pt;
+  position: absolute;
+}
+
+.nazad {
+  margin-top:600px;
+  margin-left: 850px;
+  font-family:zx;
+  font-size: 30pt;
+  position: absolute;
+}
+
+</style>
+
+</head>
+<body>
+
+
+<div class="background"></div>
+<div class="tree"></div>
+<div class="crow"></div>
+<div class="beak1"></div>
+<div class="beak2"></div>
+<div class="fox1"></div>
+<div class="fox2"></div>
+
+<div class="note1">♫</div>
+<div class="note2">♫</div>
+<div class="note3">♫</div>
+<div class="note4">♫</div>
+<div class="note5">♫</div>
+<div class="note6">♫</div>
+<div class="note7">♫</div>
+<div class="note8">♫</div>
+
+<h1 class="opis">
+    animirana scena iz apstraktne bajke.
+</h1>
+
+<h2 class="nazad">
+   <a href="../index3.html">
+    <-- nazad
+  </a>
+</h2>
+
+
+
+
+
+		
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		body {background: black
+	}
+		#videodiv {position: fixed; right: 0;bottom: 0;overflow-x: hidden; z-index: 1; 
+}
+
+#videodiv2 {position: fixed; right: 0;bottom: 0;overflow-x: hidden; z-index: 0; 
+}
+.logooverlay {
+  background-color: transparent;
+  width: 220px;
+  height: 220px;
+  margin: 0 auto;
+  z-index: 0;
+  position: relative;
+  margin-top: 312px;
+}
+
+
+
+
+
+	</style>
+</head>
+<body>
+
+<div id="videodiv">
+ <video muted autoplay>
+  <source src="page2video.mp4" type="video/mp4">
+ </video>  
+</div>
+
+<div id="videodiv2">
+ <video muted autoplay loop>
+  <source src="page2video2.mp4" type="video/mp4">
+ </video>  
+</div>
+
+<div class="logooverlay">
+	<a href="index3.html" style="display:block; height:220px; width:220px; align:\">
+       <div style="width: 0px; 
+       height: 0px; 
+       border-left: 7px solid transparent; 
+       border-right: 7px solid transparent; 
+       border-top: 12px solid transparent;
+       display: inline-block;
+       vertical-align: middle;">
+</div>
+
+
+
+
+
+<script>
+        setTimeout(hideDiv, 5000); //Instead of 10000 put your video's length, in milliseconds  
+            function hideDiv() {
+                document.getElementById("videodiv").style.display="none";    
+            }
+</script>
+
+</body>
+</html>

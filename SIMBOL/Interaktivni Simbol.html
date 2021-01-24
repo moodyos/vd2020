@@ -1,0 +1,121 @@
+<html>
+
+<head>
+	<style>
+    @font-face {
+  font-family:zx;
+  src: url(../ZX_SPECTRUM-7.ttf);
+}
+    body {
+  background-color: #bdbdbd;
+  color: #000;
+}
+img {
+  transition: 0.70s;
+  -webkit-transition: 0.70s;
+  -moz-transition: 0.70s;
+  -ms-transition: 0.70s;
+  -o-transition: 0.70s;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  margin-right: auto;
+  margin-left: 700px;
+  top:150px;
+  position: absolute;
+}
+
+.divm:hover .out{
+  transition: 2s;
+  -webkit-transition: 2s;
+  -moz-transition: 2s;
+  -ms-transition: 2s;
+  -o-transition: 2s;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+} 
+
+.divm:hover .in{
+  transition: 2s;
+  -webkit-transition: 2s;
+  -moz-transition: 2s;
+  -ms-transition: 2s;
+  -o-transition: 2s;
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+
+.divm:active .in{
+  transition: 2s;
+  -webkit-transition: 2s;
+  -moz-transition: 2s;
+  -ms-transition: 2s;
+  -o-transition: 2s;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.divm:active .out{
+  transition: 2s;
+  -webkit-transition: 2s;
+  -moz-transition: 2s;
+  -ms-transition: 2s;
+  -o-transition: 2s;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+} 
+.opis {
+  margin-top: 650px;
+  margin-left: 600px;
+  font-family:zx;
+  font-size: 30pt;
+}
+
+.nazad {
+  margin-top:-50px;
+  margin-left: 600px;
+  font-family:zx;
+  font-size: 30pt;
+}
+br {
+   display: block;
+   margin: -18px;
+   line-height:1px;
+}
+
+	</style>
+</head>
+
+<body>
+
+<div class="divm">
+
+<img class="out" src="outsidesvg.svg">
+<img class="in" src="insidesvg.svg">
+
+</div>
+
+<h1 class="opis">
+    interaktivni simbol.<br />reaguje na hover i klik (+hold).
+</h1>
+
+<h2 class="nazad">
+   <a href="../index3.html">
+    <-- nazad
+  </a>
+</h2>
+
+</body>
+</html>

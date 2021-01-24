@@ -1,0 +1,112 @@
+<html>
+
+<head>
+	<style>
+img {
+  transition: 0.70s;
+  -webkit-transition: 0.70s;
+  -moz-transition: 0.70s;
+  -ms-transition: 0.70s;
+  -o-transition: 0.70s;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  margin-top: 58px;
+  margin-left: 200px;
+  position: absolute;
+filter: invert(1);
+mix-blend-mode: difference;
+}
+
+
+		.zastava {
+			margin-left: auto;
+	        margin-right: auto;
+			height: 160px;
+			width: 600px;
+			position: absolute;
+		}
+
+
+		#s1 {
+			background-color: #daa94e;
+			margin-top: 160px;
+		}
+
+		#s2 {
+			background-color: black;
+		}
+
+.divm:hover .out{
+  transition: 2s;
+  -webkit-transition: 2s;
+  -moz-transition: 2s;
+  -ms-transition: 2s;
+  -o-transition: 2s;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+
+} 
+
+.divm:hover .in{
+  transition: 2s;
+  -webkit-transition: 2s;
+  -moz-transition: 2s;
+  -ms-transition: 2s;
+  -o-transition: 2s;
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+
+.divm:active .in{
+  transition: 2s;
+  -webkit-transition: 2s;
+  -moz-transition: 2s;
+  -ms-transition: 2s;
+  -o-transition: 2s;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.divm:active .out{
+  transition: 2s;
+  -webkit-transition: 2s;
+  -moz-transition: 2s;
+  -ms-transition: 2s;
+  -o-transition: 2s;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+} 
+	</style>
+</head>
+
+<body>
+
+	<div class='zastava' id='s1'>
+	</div>
+
+	<div class='zastava' id='s2'>
+	</div>
+
+<div class="divm">
+
+<img class="out" src="outsidesvg.svg">
+<img class="in" src="insidesvg.svg">
+
+</div>
+
+</body>
+
+</html>

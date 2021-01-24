@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="2000" viewBox="0 0 2000 2000">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #010002;
+        stroke-width: 50px;
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" x="650" y="650" width="700" height="700"/>
+  <rect class="cls-1" x="550" y="550" width="900" height="900"/>
+  <rect class="cls-1" x="350" y="350" width="1300" height="1300"/>
+</svg>
