@@ -41,9 +41,16 @@ a:hover {
   src: url(vcrosdmono.ttf);
 	}
 
-	@font-face {
-  font-family:zx;
-  src: local(ZX_SPECTRUM-7);
+        @font-face {
+  font-family: "zx";
+  src: url('/fontkit/league_gothic-webfont.eot');
+  src: url('../fonts/league_gothic-webfont.eot?#iefix') format('eot'),
+       url('../fonts/league_gothic-webfont.ttf') format('truetype'),
+       url('/fontkit/zxregular-webfont.woff') format('woff'),
+       url('../fonts/league_gothic-webfont.eot#iefix') format('embedded-opentype'),
+       url('../fonts/league_gothic-webfont.svg') format('svg');
+  font-weight: "normal";
+  font-style: "normal";
 }
 	@font-face {
   font-family: zxbold;
